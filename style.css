@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Freeman&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Freeman", sans-serif;
+}
+
+
+.header-principal {
+    display: flex;
+}
+
+.nav {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 2rem;
+}
+.inicio-img {
+    position: absolute;
+    width: 100%;
+}
+
+.inicio-img img {
+    height: calc(100vh - 60px);
+    width: 100%;
+    object-fit: cover;
+}
+
+.redes-inicio {
+    display: flex;
+    bottom: 20px;
+    align-items: center;
+    right: 5px;
+    gap: 1rem;
+    font-size: 30px;
+    width: 100px;
+    position: absolute;
+    flex-direction: column;
+}
