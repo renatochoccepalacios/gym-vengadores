@@ -25,7 +25,9 @@ body {}
     width: 100%;
     display: flex;
     position: fixed;
-    justify-content: space-around;
+    padding: 0 2rem;
+    justify-content: space-between;
+    gap: 5rem;
     align-items: center;
     z-index: 5;
     height: 60px;
@@ -35,7 +37,12 @@ body {}
 
 }
 
-.nav>a {
+.user-button-nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.user-button-nav a {
     border: 2px solid var(--red);
     padding: 10px 15px;
     border-radius: 20px;
@@ -43,7 +50,7 @@ body {}
     transition: 0.5s ease-out;
 }
 
-.nav>a:hover {
+.user-button-nav>a:hover {
 
     color: #000;
     background-color: var(--red);
@@ -52,9 +59,11 @@ body {}
 .nav-menu {
     display: flex;
     gap: 2rem;
+    transition: .5s;
+    list-style: none;
 }
 
-.nav-menu>a {
+.nav-menu li > a {
     color: #fff;
 
 }
@@ -116,11 +125,18 @@ body {}
 
 .logo-header {
     color: #fff;
-    font-size: 30px;
+    font-size:1.4rem;
     font-style: italic;
     -webkit-text-stroke: 1px red;
 }
-
+.logo-nav {
+    display: none;
+    text-align: center;
+    letter-spacing: 2px;
+    text-wrap: balance;
+    font-size: 40px;
+    -webkit-text-stroke: 1px #000;
+}
 .resultados-contenedor {
     display: flex;
     background-color: #000;
@@ -188,7 +204,7 @@ body {}
     flex-direction: column;
 }
 
-.lista-plan li{
+.lista-plan li {
     display: flex;
     gap: 0.4rem;
     padding: 16px 0;
@@ -210,3 +226,55 @@ body {}
     padding: 20px;
 
 }
+
+.hamburguer-button {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    z-index: 5;
+}
+@media (max-width: 767px) {
+    .nav-menu {
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        width: 32%;
+        justify-content: center;
+        bottom: 0;
+        left: 0;
+        /* right: 0; */
+        padding: 20px;
+        font-size: 25px;
+        background-color: #ff2e2e;
+        pointer-events: auto;
+        height: 100vh;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .75);
+    }
+    .logo-nav {
+        display: flex;
+    }
+    .hamburguer-button {
+        display: flex;
+    }
+    .logo-header {
+        display: none;
+    }
+    .nav {
+        justify-content: end;
+    }
+    .menu-close {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    .menu-open {
+        transform: translateX(0);
+        display: flex;
+
+    }
+    
+}
+
