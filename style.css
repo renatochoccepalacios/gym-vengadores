@@ -13,7 +13,8 @@
 
 }
 
-body {}
+body {
+}
 
 .header-principal {
     display: flex;
@@ -46,15 +47,12 @@ body {}
     border: 2px solid var(--red);
     padding: 10px 15px;
     border-radius: 20px;
-    color: #fff;
+    color: #000;
+    background-color: var(--red);
     transition: 0.5s ease-out;
 }
 
-.user-button-nav>a:hover {
 
-    color: #000;
-    background-color: var(--red);
-}
 
 .nav-menu {
     display: flex;
@@ -73,7 +71,7 @@ body {}
     background-color: #000;
 
     /* height: calc(100vh - 60px); */
-    position: sticky;
+    /* position: sticky; */
     /* overflow: hidden;
     background-image: url('img/img-principal.png');
     background-repeat: no-repeat;
@@ -82,15 +80,15 @@ body {}
     background-attachment: fixed; */
 }
 
-/* .inicio figure {
-    background-image: url('https://lh3.googleusercontent.com/p/AF1QipMUmoOLcxWt-NprmOxdGZqahtPVvO3-Y3MsecBP=s680-w680-h510');
+.inicio figure {
+    background-image: url('https://scontent.faep15-1.fna.fbcdn.net/v/t39.30808-6/432215019_955717379227354_5193779206950528451_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGwceUXex1_ITcoj-vRbZA22whvqhul_efbCG-qG6X955-FBdZrUmVQ-go_HKHu4P26NYNc15XNc8hxCGuDuMi5&_nc_ohc=TAw02ixtfBQQ7kNvgF9RgLL&_nc_ht=scontent.faep15-1.fna&oh=00_AYCsNqE4fnrNvvJ5A9FPMpKpdKoWRBMcb-_0ebGmPbpqSw&oe=6667DA46');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    height:calc(100vh - 120px);
+    height:calc(100vh - 100px);
 
-} */
+}
 
 /* .inicio figure::after {
     content: "";
@@ -143,7 +141,7 @@ body {}
     color: #fff;
     padding: 70px 50px;
     justify-content: center;
-    gap: 4rem;
+    gap: 4rem 2rem;
 }
 
 .item-resultados {
@@ -179,7 +177,8 @@ body {}
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    padding: 4rem 2rem;
     gap: 0.3rem;
 }
 
@@ -187,6 +186,8 @@ body {}
     display: flex;
     text-align: center;
     gap: 3rem;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .planes-contenedor h2 {
@@ -241,12 +242,11 @@ body {}
         flex-direction: column;
         position: absolute;
         top: 0;
-        width: 32%;
         justify-content: center;
         bottom: 0;
         left: 0;
         /* right: 0; */
-        padding: 20px;
+        padding: 2rem ;
         font-size: 25px;
         background-color: #ff2e2e;
         pointer-events: auto;
@@ -255,6 +255,7 @@ body {}
     }
     .logo-nav {
         display: flex;
+        justify-content: center;
     }
     .hamburguer-button {
         display: flex;
