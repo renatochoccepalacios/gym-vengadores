@@ -279,3 +279,7 @@ body {
     
 }
 
+.plan-inferior {
+    position: relative;
+    top: 20px;
+}
