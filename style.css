@@ -5,7 +5,7 @@
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: "Freeman", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 :root {
@@ -27,19 +27,18 @@ body {
     display: flex;
     position: fixed;
     padding: 0 2rem;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 5rem;
     align-items: center;
     z-index: 5;
     height: 60px;
-    color: #fff;
-    background-color: #000;
+    background-color: #fff;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
 
 }
 
 .user-button-nav {
-    display: flex;
+    display: none;
     align-items: center;
     gap: 1rem;
 }
@@ -62,13 +61,14 @@ body {
 }
 
 .nav-menu li > a {
-    color: #fff;
-
+    color: #000;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
 }
 
 .inicio {
     height: calc(100vh - 60px);
-    background-color: #000;
 
     /* height: calc(100vh - 60px); */
     /* position: sticky; */
@@ -86,7 +86,7 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    height:calc(100vh - 100px);
+    height:calc(100vh - 122px);
 
 }
 
@@ -124,6 +124,7 @@ body {
 .logo-header {
     color: #fff;
     font-size:1.4rem;
+    text-wrap: nowrap;
     font-style: italic;
     -webkit-text-stroke: 1px red;
 }
@@ -139,7 +140,7 @@ body {
     display: flex;
     background-color: #000;
     color: #fff;
-    padding: 70px 50px;
+    padding: 4rem 2rem;
     justify-content: center;
     gap: 4rem 2rem;
 }
@@ -186,6 +187,7 @@ body {
     display: flex;
     text-align: center;
     gap: 3rem;
+    width: 100%;
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -215,7 +217,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 4rem;
-    width: 300px;
+    width: 100%;
+    max-width: 335px;
 }
 
 .plan-item h3 {
@@ -230,7 +233,6 @@ body {
 
 .hamburguer-button {
     background-color: transparent;
-    color: #fff;
     border: none;
     font-size: 30px;
     cursor: pointer;
