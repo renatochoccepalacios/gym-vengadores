@@ -10,6 +10,7 @@
     font-family: "Montserrat", sans-serif;
 
 }
+
 :root {
     --red: #c72929;
 
@@ -51,6 +52,7 @@ body {
     align-items: center;
     gap: 1rem;
 }
+
 .user-button-nav a {
     border: 2px solid var(--red);
     padding: 10px 15px;
@@ -69,7 +71,7 @@ body {
     list-style: none;
 }
 
-.nav-menu li > a {
+.nav-menu li>a {
     color: #000;
     font-weight: 600;
     font-size: 14px;
@@ -90,12 +92,13 @@ body {
 }
 
 .inicio figure {
-    background-image: url('https://scontent.faep15-1.fna.fbcdn.net/v/t39.30808-6/432215019_955717379227354_5193779206950528451_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGwceUXex1_ITcoj-vRbZA22whvqhul_efbCG-qG6X955-FBdZrUmVQ-go_HKHu4P26NYNc15XNc8hxCGuDuMi5&_nc_ohc=TAw02ixtfBQQ7kNvgF9RgLL&_nc_ht=scontent.faep15-1.fna&oh=00_AYCsNqE4fnrNvvJ5A9FPMpKpdKoWRBMcb-_0ebGmPbpqSw&oe=6667DA46');
+    /* background-image: url('https://scontent.faep15-1.fna.fbcdn.net/v/t39.30808-6/432215019_955717379227354_5193779206950528451_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGwceUXex1_ITcoj-vRbZA22whvqhul_efbCG-qG6X955-FBdZrUmVQ-go_HKHu4P26NYNc15XNc8hxCGuDuMi5&_nc_ohc=TAw02ixtfBQQ7kNvgF9RgLL&_nc_ht=scontent.faep15-1.fna&oh=00_AYCsNqE4fnrNvvJ5A9FPMpKpdKoWRBMcb-_0ebGmPbpqSw&oe=6667DA46'); */
+    background-image: url('https://imagenes.lainformacion.com/files/og_thumbnail_1900/uploads/imagenes/2022/01/19/un-joven-realiza-ejercicios-en-un-gimnasio.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    height:calc(100vh - 122px);
+    height: calc(100vh - 122px);
 
 }
 
@@ -132,11 +135,12 @@ body {
 
 .logo-header {
     color: #fff;
-    font-size:1.4rem;
+    font-size: 1.4rem;
     text-wrap: nowrap;
     font-style: italic;
     -webkit-text-stroke: 1px red;
 }
+
 .logo-nav {
     display: none;
     text-align: center;
@@ -145,6 +149,7 @@ body {
     font-size: 40px;
     -webkit-text-stroke: 1px #000;
 }
+
 .resultados-contenedor {
     display: flex;
     background-color: #000;
@@ -249,6 +254,7 @@ body {
     display: none;
     z-index: 5;
 }
+
 @media (max-width: 767px) {
     .nav-menu {
         flex-direction: column;
@@ -258,26 +264,31 @@ body {
         bottom: 0;
         left: 0;
         /* right: 0; */
-        padding: 2rem ;
+        padding: 2rem;
         font-size: 25px;
         background-color: #ff2e2e;
         pointer-events: auto;
         height: 100vh;
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .75);
     }
+
     .logo-nav {
         display: flex;
         justify-content: center;
     }
+
     .hamburguer-button {
         display: flex;
     }
+
     .logo-header {
         display: none;
     }
+
     .nav {
         justify-content: end;
     }
+
     .menu-close {
         transform: translateX(-100%);
         opacity: 0;
@@ -288,7 +299,7 @@ body {
         display: flex;
 
     }
-    
+
 }
 
 .plan-inferior {
@@ -301,7 +312,177 @@ body {
         flex-direction: column;
 
     }
+
     .plan-item {
         max-width: 100%;
     }
+}
+
+
+.carrusel-section {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrusel-contenedor {
+    width: 800px;
+    height: 450px;
+    border-radius: 15px;
+
+    overflow: hidden;
+    position: relative;
+}
+
+.carrusel {
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+
+.slider-section {
+    width: calc(100% / 4);
+    height: 100%;
+}
+
+.slider-section img {
+    width: 800px;
+    border-radius: 15px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btn-left,
+.btn-right {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    padding: 9px;
+    cursor: pointer;
+    font-weight: 600;
+    transform: translate(0, -50%);
+    transition: .5s ease;
+    user-select: none;
+    color: #fff;
+}
+
+.btn-left {
+    left: 10px;
+}
+
+.btn-right {
+    right: 10px;
+}
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    color: #fff;
+    padding: 5rem;
+    align-items: center;
+    gap: 4rem;
+}
+
+.footer h3 {
+    text-align: center;
+}
+
+.form-arriba {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+
+}
+
+.formulario-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+}
+
+.form-arriba-input {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    align-items: center;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    padding: 10px;
+}
+
+
+.form-arriba-input input {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    font-size: 17px;
+    color: #fff;
+
+}
+
+.form-arriba-input input:focus {
+    outline: none;
+    border: none;
+}
+
+.footer span {
+    text-align: center;
+}
+
+.form-abajo {
+    display: flex;
+    justify-content: space-around;
+    gap: 5rem;
+
+}
+
+.form-abajo button {
+    padding: 0 2rem;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color:#fff;
+    letter-spacing: 5px;
+    cursor: pointer;
+    transition: 0.9s ease;
+    text-transform: uppercase;
+}
+
+.form-abajo button:hover {
+    color:#000;
+    background-color: #fff;
+}
+
+.form-abajo-input {
+    display: flex;
+    gap: 10px;
+    
+    width: 100%;
+    border: 1px solid #fff;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.form-abajo-input input {
+    background-color: transparent;
+    border: none;
+    font-size: 17px;
+    width: 100%;
+    color: #fff;
+}
+
+.form-abajo-input input:focus {
+    outline: none;
+    border: none;
+}
+
+.form-abajo-button {
+    display: flex;
+    align-items: center;
+    justify-content: end;
 }
