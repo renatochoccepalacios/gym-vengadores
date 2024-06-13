@@ -87,7 +87,7 @@ body {
 
 .inicio {
     height: calc(100vh - 60px);
-
+    overflow: hidden;
     /* height: calc(100vh - 60px); */
     /* position: sticky; */
     /* overflow: hidden;
@@ -100,15 +100,38 @@ body {
 
 .inicio figure {
     /* background-image: url('https://scontent.faep15-1.fna.fbcdn.net/v/t39.30808-6/432215019_955717379227354_5193779206950528451_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGwceUXex1_ITcoj-vRbZA22whvqhul_efbCG-qG6X955-FBdZrUmVQ-go_HKHu4P26NYNc15XNc8hxCGuDuMi5&_nc_ohc=TAw02ixtfBQQ7kNvgF9RgLL&_nc_ht=scontent.faep15-1.fna&oh=00_AYCsNqE4fnrNvvJ5A9FPMpKpdKoWRBMcb-_0ebGmPbpqSw&oe=6667DA46'); */
-    background-image: url('https://imagenes.lainformacion.com/files/og_thumbnail_1900/uploads/imagenes/2022/01/19/un-joven-realiza-ejercicios-en-un-gimnasio.jpeg');
-    background-repeat: no-repeat;
+    /* background-image: url('https://imagenes.lainformacion.com/files/og_thumbnail_1900/uploads/imagenes/2022/01/19/un-joven-realiza-ejercicios-en-un-gimnasio.jpeg'); */
+    /* background-repeat: no-repeat; */
+    width: 100%;
+    display: flex;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    height: calc(100vh - 122px);
-
+    height: 100vh;
+    background-repeat: no-repeat;
+    animation: banner 20s infinite linear alternate;
 }
 
+@keyframes banner {
+    0%, 20% {
+        background-image: url(img/img-principal1.jpg);
+        transform: scale(1);
+    }
+    25%, 45% {
+        background-image: url(img/img-principal2.jpg);
+        transform: scale(1.1);
+    }
+    50%, 70% {
+        background-image: url(img/img-principal3.jpg);
+        transform: scale(1.05);
+    }
+
+    75%, 100% {
+        background-image: url(img/img-principal4.jpg);
+        transform: scale(1.1);
+    }
+
+}
 /* .inicio figure::after {
     content: "";
     position: absolute;
