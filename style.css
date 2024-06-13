@@ -330,6 +330,7 @@ body {
     min-height: 100vh;
     justify-content: center;
     align-items: center;
+    padding: 2rem;
 }
 
 .carrusel-contenedor {
@@ -353,10 +354,11 @@ body {
 }
 
 .slider-section img {
-    width: 800px;
+    width: 100%;
     border-radius: 15px;
     height: 100%;
     object-fit: cover;
+    object-position: center;
 }
 
 .btn-left,
@@ -389,7 +391,7 @@ body {
     flex-direction: column;
     background-color: #000;
     color: #fff;
-    padding: 5rem;
+    padding: 5rem 2rem;
     align-items: center;
     gap: 4rem;
 }
@@ -410,6 +412,7 @@ body {
     flex-direction: column;
     gap: 2rem;
     width: 100%;
+    max-width: 1000px;
 }
 
 .form-arriba-input {
@@ -491,4 +494,18 @@ body {
     display: flex;
     align-items: center;
     justify-content: end;
+}
+
+@media (max-width: 590px) {
+    .form-arriba {
+        flex-direction: column;
+    }
+
+    .form-abajo {
+        flex-direction: column;
+    }
+
+    .form-abajo button {
+        padding: 1rem;
+    }
 }
