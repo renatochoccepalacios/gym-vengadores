@@ -1,6 +1,7 @@
 const buttonHamburguer = document.querySelector('#button-hamburguer');
 const navMenu = document.querySelector('#nav-menu');
 const iconBars = document.querySelector('#button-hamburguer i');
+const nav = document.querySelector("#nav");
 
 buttonHamburguer.addEventListener('click', () => {
     if(navMenu.classList.contains('menu-close')) {
@@ -15,4 +16,9 @@ buttonHamburguer.addEventListener('click', () => {
         iconBars.setAttribute('class', 'fa-solid fa-bars') // reemplazar clase
 
     }
-})
+});
+
+
+// window.addEventListener('scroll', function () {
+//     nav.classList.toggle('abajo', window.scrollY > 0)
+// })
