@@ -398,6 +398,11 @@ body {
 
 .footer h3 {
     text-align: center;
+    width: 100%;
+    max-width: 1000px;
+    font-size: clamp(1rem, 8vw, 4rem);
+    text-transform: uppercase;
+    letter-spacing: 4px;
 }
 
 .form-arriba {
@@ -442,6 +447,8 @@ body {
 
 .footer span {
     text-align: center;
+    width: 100%;
+    max-width: 1000px;
 }
 
 .form-abajo {
