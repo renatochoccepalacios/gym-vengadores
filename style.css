@@ -97,6 +97,20 @@ body {
     background-position: center;
     background-attachment: fixed; */
 }
+.inicio h2 {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    padding: 0 2rem;
+    font-size: clamp(0.5rem, 7vw, 1.5rem);
+    bottom: 10%;
+    font-family: cursive;
+    text-transform: uppercase;
+    color: #fff;
+    z-index: 5;
+}
 
 .inicio figure {
     /* background-image: url('https://scontent.faep15-1.fna.fbcdn.net/v/t39.30808-6/432215019_955717379227354_5193779206950528451_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGwceUXex1_ITcoj-vRbZA22whvqhul_efbCG-qG6X955-FBdZrUmVQ-go_HKHu4P26NYNc15XNc8hxCGuDuMi5&_nc_ohc=TAw02ixtfBQQ7kNvgF9RgLL&_nc_ht=scontent.faep15-1.fna&oh=00_AYCsNqE4fnrNvvJ5A9FPMpKpdKoWRBMcb-_0ebGmPbpqSw&oe=6667DA46'); */
@@ -109,7 +123,7 @@ body {
     background-attachment: fixed;
     height: 100vh;
     background-repeat: no-repeat;
-    animation: banner 20s infinite linear alternate;
+    animation: banner 30s infinite linear alternate;
 }
 
 @keyframes banner {
@@ -130,7 +144,6 @@ body {
         background-image: url(img/img-principal4.jpg);
         transform: scale(1.1);
     }
-
 }
 /* .inicio figure::after {
     content: "";
@@ -146,7 +159,7 @@ body {
 
 .redes-inicio {
     display: flex;
-    bottom: 5rem;
+    bottom: 10rem;
     align-items: center;
     right: -15px;
     margin-right: 30px;
