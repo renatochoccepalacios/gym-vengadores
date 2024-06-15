@@ -97,6 +97,7 @@ body {
     background-position: center;
     background-attachment: fixed; */
 }
+
 .inicio h2 {
     position: absolute;
     display: flex;
@@ -106,10 +107,10 @@ body {
     padding: 0 2rem;
     font-size: clamp(0.5rem, 7vw, 1.5rem);
     bottom: 10%;
-    font-family: cursive;
+    font-style: italic;
     text-transform: uppercase;
     color: #fff;
-    z-index: 5;
+    z-index: 1;
 }
 
 .inicio figure {
@@ -126,25 +127,43 @@ body {
     animation: banner 30s infinite linear alternate;
 }
 
+.inicio-figure::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2323238a;
+}
+
 @keyframes banner {
-    0%, 20% {
+
+    0%,
+    20% {
         background-image: url(img/img-principal1.jpg);
         transform: scale(1);
     }
-    25%, 45% {
+
+    25%,
+    45% {
         background-image: url(img/img-principal2.jpg);
         transform: scale(1.1);
     }
-    50%, 70% {
+
+    50%,
+    70% {
         background-image: url(img/img-principal3.jpg);
         transform: scale(1.05);
     }
 
-    75%, 100% {
+    75%,
+    100% {
         background-image: url(img/img-principal4.jpg);
         transform: scale(1.1);
     }
 }
+
 /* .inicio figure::after {
     content: "";
     position: absolute;
@@ -321,8 +340,8 @@ body {
         color: #fff;
         -webkit-text-stroke: 2px #000;
     }
-    
-    .nav-menu li > a {
+
+    .nav-menu li>a {
         color: #fff;
     }
 
@@ -505,7 +524,7 @@ body {
     padding: 0 2rem;
     border: 1px solid #fff;
     background-color: transparent;
-    color:#fff;
+    color: #fff;
     letter-spacing: 5px;
     cursor: pointer;
     transition: 0.9s ease;
@@ -513,14 +532,14 @@ body {
 }
 
 .form-abajo button:hover {
-    color:#000;
+    color: #000;
     background-color: #fff;
 }
 
 .form-abajo-input {
     display: flex;
     gap: 10px;
-    
+
     width: 100%;
     border: 1px solid #fff;
     padding: 10px;
